@@ -1,0 +1,15 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#fef9c3"/>
+  <!-- Battery body -->
+  <rect x="100" y="110" width="200" height="80" rx="10" fill="none" stroke="#ca8a04" stroke-width="8"/>
+  <rect x="300" y="130" width="15" height="40" rx="5" fill="#ca8a04"/>
+  <!-- Charging bars -->
+  <rect x="115" y="120" width="50" height="60" rx="5" fill="#ef4444"/>
+  <rect x="175" y="120" width="50" height="60" rx="5" fill="#ef4444"/>
+  <rect x="235" y="120" width="50" height="60" rx="5" fill="none" stroke="#fcd34d" stroke-width="4" stroke-dasharray="5,5"/>
+  <!-- Interactive clicking on drop -->
+  <path d="M200 30 C200 30 180 60 180 75 C180 90 220 90 220 75 C220 60 200 30 200 30 Z" fill="#ef4444"/>
+  <!-- Click ripples -->
+  <circle cx="200" cy="75" r="25" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="5,5"/>
+  <polygon points="230,60 250,110 240,110 250,130 240,135 230,115 220,120" fill="white" stroke="#334155" stroke-width="3"/>
+</svg>

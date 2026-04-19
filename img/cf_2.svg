@@ -1,0 +1,40 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ccfbf1" rx="12"/>
+  
+  <!-- Windpipe -->
+  <rect x="185" y="40" width="30" height="90" fill="#f472b6" rx="5"/>
+  <line x1="185" y1="60" x2="215" y2="60" stroke="#db2777" stroke-width="3"/>
+  <line x1="185" y1="80" x2="215" y2="80" stroke="#db2777" stroke-width="3"/>
+  <line x1="185" y1="100" x2="215" y2="100" stroke="#db2777" stroke-width="3"/>
+
+  <!-- Left Lung (Happy & Clean) -->
+  <path d="M190 120 Q 80 100 80 200 Q 80 260 170 260 Q 190 200 190 120" fill="#fbcfe8" stroke="#ec4899" stroke-width="6"/>
+  <!-- Right Lung (Happy & Clean) -->
+  <path d="M210 120 Q 320 100 320 200 Q 320 260 230 260 Q 210 200 210 120" fill="#fbcfe8" stroke="#ec4899" stroke-width="6"/>
+  
+  <!-- Happy faces on lungs -->
+  <path d="M 120 180 Q 130 195 140 180" fill="none" stroke="#db2777" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="170" r="3" fill="#db2777"/>
+  <circle cx="140" cy="170" r="3" fill="#db2777"/>
+
+  <path d="M 280 180 Q 270 195 260 180" fill="none" stroke="#db2777" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="280" cy="170" r="3" fill="#db2777"/>
+  <circle cx="260" cy="170" r="3" fill="#db2777"/>
+
+  <!-- Magic Wind blowing away the jelly -->
+  <path d="M 110 200 Q 60 150 20 200" fill="none" stroke="#2dd4bf" stroke-width="8" stroke-linecap="round" stroke-dasharray="15,10"/>
+  <path d="M 290 200 Q 340 150 380 200" fill="none" stroke="#2dd4bf" stroke-width="8" stroke-linecap="round" stroke-dasharray="15,10"/>
+  
+  <path d="M 140 230 Q 90 260 40 240" fill="none" stroke="#5eead4" stroke-width="5" stroke-linecap="round" stroke-dasharray="10,8"/>
+  <path d="M 260 230 Q 310 260 360 240" fill="none" stroke="#5eead4" stroke-width="5" stroke-linecap="round" stroke-dasharray="10,8"/>
+
+  <!-- Jelly particles flying away smoothly -->
+  <circle cx="50" cy="180" r="8" fill="#c084fc"/>
+  <circle cx="30" cy="210" r="5" fill="#a855f7"/>
+  <circle cx="70" cy="230" r="10" fill="#c084fc"/>
+  
+  <circle cx="350" cy="180" r="8" fill="#c084fc"/>
+  <circle cx="370" cy="210" r="5" fill="#a855f7"/>
+  <circle cx="330" cy="230" r="10" fill="#c084fc"/>
+
+</svg>

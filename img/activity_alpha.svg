@@ -1,0 +1,21 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ffedd5"/>
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#fdba74" stroke-width="6" stroke-dasharray="15,15"/>
+  <text x="200" y="160" fill="#fb923c" font-size="30" font-family="sans-serif" text-anchor="middle" font-weight="bold">بناء</text>
+  <!-- Wrench -->
+  <g transform="translate(100, 100)">
+    <path d="M0 30 L20 10 L30 20 L10 40 Z" fill="#94a3b8"/>
+    <circle cx="0" cy="30" r="15" fill="none" stroke="#94a3b8" stroke-width="8"/>
+  </g>
+  <!-- Hammer -->
+  <g transform="translate(260, 180) rotate(-20)">
+    <rect x="-5" y="-30" width="10" height="60" fill="#b45309" />
+    <rect x="-15" y="-35" width="30" height="15" fill="#94a3b8" rx="3" />
+  </g>
+  <!-- Gear -->
+  <circle cx="250" cy="80" r="20" fill="none" stroke="#cbd5e1" stroke-width="10" stroke-dasharray="10,5"/>
+  <!-- Click ripples on Wrench -->
+  <circle cx="100" cy="130" r="25" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="5,5"/>
+  <!-- Interactive Cursor -->
+  <polygon points="120,130 140,180 130,180 140,200 130,205 120,185 110,190" fill="white" stroke="#334155" stroke-width="3"/>
+</svg>

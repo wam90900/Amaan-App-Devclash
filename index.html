@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أمان - Aman App</title>
+  <link rel="icon" type="image/png" href="img/amaan logo  .png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section id="screen-splash" class="screen active">
+    <div class="splash-content">
+      <img src="img/amaan logo  .png" alt="أمان" class="splash-logo">
+      <h1 class="splash-title">Amaan</h1>
+    </div>
+  </section>
+
+  <section id="screen-login" class="screen">
+    <div class="login-container">
+      <div class="login-illustration">
+        <img src="img/العائلة.png" alt="العائلة" class="family-illustration">
+      </div>
+      <h2 class="login-headline">أمان... قرار صحي يبدأ قبل الزواج</h2>
+      <div class="login-actions">
+        <button type="button" class="btn btn-primary" data-action="show-login-form">تسجيل الدخول</button>
+        <button type="button" class="btn btn-outline" data-action="show-register-form">سجل الآن</button>
+      </div>
+      <div id="login-form" class="auth-form hidden">
+        <input type="text" class="input" placeholder="رقم الهاتف أو الايميل" id="login-phone">
+        <input type="password" class="input" placeholder="كلمة المرور" id="login-password">
+        <button type="button" class="btn btn-primary btn-block" data-navigate="home">تسجيل الدخول</button>
+      </div>
+      <div id="register-form" class="auth-form hidden">
+        <input type="text" class="input" placeholder="رقم الهاتف أو الايميل" id="reg-phone">
+        <input type="password" class="input" placeholder="كلمة المرور" id="reg-password">
+        <label class="checkbox-label">
+          <input type="checkbox" id="agree-terms"> أوافق على سياسة الخصوصية وشروط الخدمة
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="agree-genetic"> مشاركة بياناتي الشخصية لفحصي الوراثي وفقًا للوائح المحلية
+        </label>
+        <button type="button" class="btn btn-primary btn-block" data-navigate="home">إنشاء حساب</button>
+      </div>
+      <p class="social-divider">أو المتابعة باستخدام</p>
+      <div class="social-login">
+        <a href="#" class="social-btn" aria-label="Apple">
+          <img src="img/apple-brands-solid-full.svg" alt="Apple" width="18" height="18">
+        </a>
+        <a href="#" class="social-btn social-btn-google" aria-label="Google">G</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="screen-home" class="screen">
+    <header class="app-header">
+      <button type="button" class="icon-btn" aria-label="الإشعارات">
+        <img src="img/bell-solid-full.svg" alt="" width="18" height="18">
+      </button>
+      <div class="header-title">
+        <h1>أهلا بك في أمان</h1>
+        <p>صحتك وصحة من تحب أولويتنا</p>
+      </div>
+      <img src="img/profile.png" class="avatar-image" alt="الملف الشخصي">
+    </header>
+    <main class="app-main">
+      <div class="card health-status-card">
+        <div class="card-head">
+          <h3>حالتك الصحية</h3>
+          <span>لا توجد تقارير بعد</span>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" data-navigate="upload">عرض التفاصيل</button>
+      </div>
+
+      <div class="card health-guide-card">
+        <h3>دليلك الصحي</h3>
+        <div class="guide-tiles">
+          <a href="#" class="guide-tile" data-navigate="library">
+            <img src="https://files.svgcdn.io/healthicons/nutrition-outline.svg" alt="التغذية" width="34" height="34">
+            <span>التغذية</span>
+          </a>
+          <a href="#" class="guide-tile" data-navigate="library">
+            <img src="https://files.svgcdn.io/heroicons/clipboard-document-check-20-solid.svg" alt="سجل المرض"
+              width="34" height="34">
+            <span>سجل المرض</span>
+          </a>
+          <a href="#" class="guide-tile" data-navigate="library">
+            <img src="https://files.svgcdn.io/heroicons/lock-closed-20-solid.svg" alt="نصائح" width="34" height="34">
+            <span>نصائح</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card info-card">
+        <p class="info-text">هل تعلم؟ الكشف المبكر من الأمراض الوراثية يساعد في حماية صحة الأجيال القادمة.</p>
+      </div>
+      <div class="card cta-card">
+        <p>لا توجد تقارير بعد</p>
+        <button type="button" class="btn btn-primary" data-navigate="upload">رفع التقرير</button>
+      </div>
+      <div class="card security-card">
+        <img src="https://files.svgcdn.io/heroicons/chat-bubble-left-right-20-solid.svg" alt="" width="20" height="20">
+        <p>بياناتك مشفرة ومحفوظة بأمان.</p>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-upload" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="home" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1>تحميل التقرير</h1>
+    </header>
+    <main class="upload-main">
+      <p class="upload-instruction">قم بتحميل نتائج الفحص الخاصة بك</p>
+      <p class="upload-desc">يرجى تحميل تقرير الفحص الرسمي قبل الزواج، وسيقوم نظام الذكاء الاصطناعي بتحليله بشكل آمن.
+      </p>
+      <div class="upload-zone" id="upload-zone">
+        <img src="https://files.svgcdn.io/heroicons/document-arrow-up-20-solid.svg" alt="" width="42" height="42">
+        <span>انقر لتحميل التقرير</span>
+        <span class="upload-meta">PNG/JPG/PDF حتى 10MB</span>
+        <input type="file" id="report-file" accept=".pdf,.jpg,.jpeg,.png" hidden>
+      </div>
+      <div class="upload-guidelines">
+        <h4>إرشادات التحميل</h4>
+        <ul>
+          <li>اسم المريض واضح</li>
+          <li>تقرير طبي رسمي</li>
+          <li>صورة واضحة للمستند</li>
+        </ul>
+      </div>
+      <div id="upload-loading-area" style="display: none; text-align: center; margin-top: 20px;">
+        <div style="width: 40px; height: 40px; border: 4px solid #f3f4f6; border-top: 4px solid #2dd4bf; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 10px;"></div>
+        <p id="upload-loading-text" style="font-weight: bold; color: #1e293b;">جاري استخراج البيانات...</p>
+      </div>
+    </main>
+  </section>
+
+  <section id="screen-analysis" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="home" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1>نتائج تحليل الذكاء الاصطناعي</h1>
+    </header>
+    <main class="analysis-main" style="padding: 20px; overflow-y: auto;">
+      <div class="analysis-hero" style="text-align: center; margin-bottom: 20px;">
+        <div style="font-size: 60px;">🤖✨</div>
+        <p style="color: #64748b; margin-top: 10px;">تم قراءة التقرير بنجاح</p>
+      </div>
+      <div class="card risk-assessment-card" style="margin-bottom: 20px;">
+        <h3>مؤشرات الخطورة</h3>
+        <p style="color: #16a34a; font-weight: bold;">احتمال وراثي منخفض</p>
+      </div>
+      <div class="card case-details-card">
+        <h3>الأمراض المكتشفة في التقرير</h3>
+        <div class="case-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 10px;">
+          <div>
+            <strong>تلاسيميا بيتا</strong>
+            <p style="color: #64748b; font-size: 0.9rem;">أنت حامل للصفة - لا يوجد خطر بالغ</p>
+          </div>
+          <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 5px 10px;" data-navigate="library" data-disease="thalassemia">عرض التفاصيل</button>
+        </div>
+        <div class="case-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+          <div>
+            <strong>فقر الدم المنجلي</strong>
+            <p style="color: #16a34a; font-size: 0.9rem;">سليم 100%</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-library" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="home" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1>المكتبة الوراثية</h1>
+    </header>
+    <main class="library-main">
+      <div id="library-list-view">
+        <div class="library-search-wrap">
+          <input class="library-search" id="library-search" type="text" placeholder="ابحث عن مرض...">
+        </div>
+        <div class="library-list" id="library-disease-list"></div>
+      </div>
+
+      <div id="library-detail-view" class="hidden">
+        <div class="library-detail-top">
+          <button type="button" class="btn-link" id="library-back-btn">عرض كل الأمراض</button>
+        </div>
+        <div class="library-tabs">
+          <button type="button" class="tab-btn active" data-tab="overview">نظرة عامة</button>
+          <button type="button" class="tab-btn" data-tab="inheritance">الوراثة</button>
+          <button type="button" class="tab-btn" data-tab="symptoms">الأعراض</button>
+          <button type="button" class="tab-btn" data-tab="actions">الإجراءات</button>
+        </div>
+        <div id="library-content"></div>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item active" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-reports" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="home" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1>التقارير</h1>
+    </header>
+    <main class="app-main">
+      <div class="card" id="reports-container">
+        <p class="info-text">لا توجد تقارير حالياً. قم برفع تقريرك من الصفحة الرئيسية.</p>
+        <button type="button" class="btn btn-primary" data-navigate="upload">رفع تقرير</button>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item active" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-stats" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="home" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1>الإحصائيات</h1>
+    </header>
+    <main class="app-main">
+      <div class="card" id="stats-container">
+        <p class="info-text">ستظهر إحصائياتك بعد رفع التقرير وتحليله.</p>
+        <button type="button" class="btn btn-primary" data-navigate="upload">رفع تقرير</button>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item active" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-profile" class="screen">
+    <header class="page-header profile-header">
+      <h1>ملفي الصحي</h1>
+    </header>
+    <main class="profile-main">
+      <div class="profile-card">
+        <img src="img/profile.png" class="profile-avatar-image" alt="الملف الشخصي">
+        <h2>أحمد البلوشي</h2>
+        <p>غير متزوج • مسقط</p>
+      </div>
+      <div class="card">
+        <h3>المعلومات الأساسية</h3>
+        <ul class="info-list">
+          <li><span>الفئة العمرية</span> 25-30</li>
+          <li><span>فصيلة الدم</span> O+</li>
+          <li><span>الطول</span> 170 سم</li>
+          <li><span>الوزن</span> 65</li>
+          <li><span>الجنس</span> ذكر</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>التاريخ الطبي للعائلة</h3>
+        <p>إصابة بالثلاسيميا وداء السكري النوع 2.</p>
+      </div>
+      <div class="card">
+        <h3>التقارير الطبية</h3>
+        <ul class="reports-list">
+          <li>
+            <span>نتيجة فحص ما قبل الزواج</span>
+            <span>12/1/2026 - مختبر معتمد</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item" data-nav="home"><img src="https://files.svgcdn.io/heroicons/home-20-solid.svg" alt="الرئيسية" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="library"><img src="https://files.svgcdn.io/heroicons/book-open-20-solid.svg" alt="المكتبة" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="reports"><img src="https://files.svgcdn.io/heroicons/document-duplicate-20-solid.svg" alt="التقارير" width="20" height="20"></a>
+      <a href="#" class="nav-item" data-nav="stats"><img src="https://files.svgcdn.io/heroicons/chart-bar-square-20-solid.svg" alt="إحصائيات" width="20" height="20"></a>
+      <a href="#" class="nav-item active" data-nav="profile"><img src="https://files.svgcdn.io/heroicons/user-circle-20-solid.svg" alt="الملف" width="20" height="20"></a>
+    </nav>
+  </section>
+
+  <section id="screen-story" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="library" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1 id="story-title">القصة</h1>
+    </header>
+    <main class="story-main" id="story-content" style="padding: 20px; overflow-y: auto;">
+      <!-- Content injected by app.js storyData -->
+    </main>
+  </section>
+
+  <section id="screen-activity" class="screen">
+    <header class="page-header">
+      <button type="button" class="icon-btn back-btn" data-navigate="library" aria-label="رجوع">
+        <img src="https://files.svgcdn.io/heroicons/arrow-right-20-solid.svg" alt="" width="20" height="20">
+      </button>
+      <h1 id="activity-title">النشاط التفاعلي</h1>
+    </header>
+    <main class="activity-main" id="activity-content" style="padding: 20px; overflow-y: auto; text-align: center; min-height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+      <!-- Content injected by app.js -->
+    </main>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

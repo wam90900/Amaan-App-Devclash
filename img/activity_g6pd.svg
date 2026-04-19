@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ecfdf5"/>
+  <!-- Safe box/bucket -->
+  <path d="M 130 180 L 150 260 L 250 260 L 270 180 Z" fill="none" stroke="#10b981" stroke-width="8"/>
+  <line x1="140" y1="220" x2="260" y2="220" stroke="#10b981" stroke-width="4"/>
+  <!-- Apple -->
+  <circle cx="200" cy="230" r="25" fill="#ef4444"/>
+  <path d="M200 205 Q210 190 220 200" fill="none" stroke="#15803d" stroke-width="4" stroke-linecap="round"/>
+  <!-- Floating Bean with a cross -->
+  <g transform="translate(100, 60)">
+    <path d="M 0 0 Q 30 -40 50 10 Q 30 40 0 0" fill="#22c55e"/>
+    <line x1="-10" y1="-30" x2="60" y2="40" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="-30" x2="-10" y2="40" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- Good item above basket -->
+  <circle cx="200" cy="110" r="25" fill="#ef4444"/>
+  <path d="M200 85 Q210 70 220 80" fill="none" stroke="#15803d" stroke-width="4" stroke-linecap="round"/>
+  <!-- Interactive Cursor -->
+  <polygon points="230,110 250,160 240,160 250,180 240,185 230,165 220,170" fill="white" stroke="#334155" stroke-width="3"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#fce7f3"/>
+  <!-- Abstract lung outline -->
+  <path d="M190 120 Q 80 100 80 200 Q 80 260 170 260 Q 190 200 190 120" fill="none" stroke="#f472b6" stroke-width="8" opacity="0.5"/>
+  <path d="M210 120 Q 320 100 320 200 Q 320 260 230 260 Q 210 200 210 120" fill="none" stroke="#f472b6" stroke-width="8" opacity="0.5"/>
+  
+  <!-- "Blowing Action / Wind" -->
+  <path d="M 120 250 Q 200 150 280 250" fill="none" stroke="#2dd4bf" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 80 220 Q 200 100 320 220" fill="none" stroke="#5eead4" stroke-width="12" stroke-linecap="round"/>
+  
+  <path d="M 160 120 L 195 70 L 205 80 Z" fill="#2dd4bf"/> 
+  <path d="M 240 120 L 205 70 L 195 80 Z" fill="#2dd4bf"/>
+  
+  <!-- Big interactive button shape -->
+  <rect x="120" y="160" width="160" height="60" rx="30" fill="#ef4444"/>
+  <text x="200" y="200" fill="white" font-size="28" font-family="sans-serif" text-anchor="middle" font-weight="bold">انفخ وتحرك!</text>
+  
+  <!-- Interactive Cursor -->
+  <polygon points="220,180 240,230 230,230 240,250 230,255 220,235 210,240" fill="white" stroke="#334155" stroke-width="3"/>
+</svg>
