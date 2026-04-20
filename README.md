@@ -5,7 +5,7 @@
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 **Aman (أمان) is an AI-powered web application designed to support individuals and families in Oman in making informed health decisions before marriage.
 
@@ -17,28 +17,28 @@ Aman bridges this gap by turning medical data into knowledge, awareness, and act
 
 ---
 
-## 🎯 What Makes Aman Unique
+##  What Makes Aman Unique
 
 Aman is not just a report reader — it's a **complete health awareness experience**:
 
-### 🤖 AI-powered analysis
+###  AI-powered analysis
 Users can upload their premarital screening reports, and the app automatically reads and explains the results in a simple way.
 
-### 📊 Clear risk insights
+###  Clear risk insights
 Instead of complex terms, users see easy-to-understand indicators like **low**, **medium**, or **high** risk.
 
-### 📚 Educational genetic library
+### Educational genetic library
 The app provides simplified explanations of common hereditary diseases, including causes, symptoms, and prevention.
 
-### 👨‍👩‍👧 Family-friendly learning
+### Family-friendly learning
 Through stories and interactive activities, even children can understand genetic conditions in an engaging way.
 
-### 🧬 Personal health awareness
+###  Personal health awareness
 Users can track their health information and better understand their genetic status over time.
 
 ---
 
-## 💡 The Idea Behind Aman
+## The Idea Behind Aman
 
 Many people receive medical test results but don't fully understand what they mean or what actions to take.
 
@@ -51,7 +51,7 @@ Many people receive medical test results but don't fully understand what they me
 
 ---
 
-## 🎨 Design (Figma)
+## Design (Figma)
 
 You can explore the full user interface and experience here:
 
@@ -59,25 +59,25 @@ You can explore the full user interface and experience here:
 
 **The design focuses on:**
 
-- 🌐 **Arabic-first (RTL)** experience
-- 🎨 Clean and friendly interface
-- 🧭 Simple navigation for all age groups
-- 🖼️ Visually engaging educational content
+-  **Arabic-first (RTL)** experience
+-  Clean and friendly interface
+-  Simple navigation for all age groups
+-  Visually engaging educational content
 
 ---
 
-## 🌍 Impact
+##  Impact
 
 Aman aims to make a **real social impact** by:
 
-- 🔬 Raising awareness about genetic diseases
-- 💑 Helping individuals make informed life decisions
-- 🏥 Supporting national health goals in preventive care
-- 📖 Making medical knowledge accessible to everyone
+-  Raising awareness about genetic diseases
+-  Helping individuals make informed life decisions
+-  Supporting national health goals in preventive care
+-  Making medical knowledge accessible to everyone
 
 ---
 
-## 👥 Team Members
+##  Team Members
 
 | Name | Role |
 |------|------|
