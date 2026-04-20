@@ -7,13 +7,13 @@
 
 ## 📖 Project Overview
 
-**Aman (أمان)** is an AI-powered web application designed to support individuals and families in making informed health decisions before marriage.
+**Aman (أمان) is an AI-powered web application designed to support individuals and families in Oman in making informed health decisions before marriage.
 
-The platform focuses on simplifying complex genetic medical reports and transforming them into clear, understandable insights that anyone can use — even without a medical background.
+The platform focuses on simplifying complex genetic screening reports and transforming them into clear, easy-to-understand insights — even for people without a medical background.
 
-In many regions, especially in the Gulf, hereditary blood diseases such as sickle cell anemia and thalassemia are common. Despite the availability of premarital screening, many people struggle to understand their results.
+In Oman, hereditary blood disorders such as sickle cell anemia and thalassemia remain a significant health concern. While premarital screening programs are available, many individuals find it difficult to fully understand their results and implications.
 
-Aman bridges this gap by turning medical data into **knowledge, awareness, and actionable guidance**.
+Aman bridges this gap by turning medical data into knowledge, awareness, and actionable guidance — empowering Omani society to make informed, confident decisions for healthier families.**.
 
 ---
 
